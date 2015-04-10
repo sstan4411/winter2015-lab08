@@ -11,6 +11,9 @@ class Gamma extends Application {
 
     function __construct() {
         parent::__construct();
+
+        // added the access control for admin user only
+        $this->restrict(ROLE_ADMIN);
     }
 
     //-------------------------------------------------------------
